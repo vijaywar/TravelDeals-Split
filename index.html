@@ -2,344 +2,52 @@
 <html lang="en">
   <head>
     <title>Travelgo</title>
+    <link rel="shortcut icon" href="./assets/img/logo-removebg-preview.png" type="image/x-icon">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="./assets/css/bg.css">
+    <link rel="stylesheet" href="./assets/css/bg.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type='text/javascript'>
+      $.get('./components/header.html',function(response){ 
+       $('#header').html(response); 
+      });
+     </script>
+
+     <script type='text/javascript'>
+      $.get('./components/locations.html',function(response){ 
+       $('#locations').html(response); 
+      });
+
+      $.get('./components/packages.html',function(response){ 
+       $('#packages').html(response); 
+      });
+
+      $.get('./components/footer.html',function(response){ 
+       $('#footer').html(response); 
+      });
+
+      $.get('./components/reviews.html',function(response){ 
+       $('#reviews').html(response); 
+      });
+     </script>
   </head>
   <body class="bg-dark ">
-      <div class="titleSection ">
-        <div style="min-height: 100vh;" class="row justify-content-around  p-2">
-          <div class="col-lg-6 col-md-6 text-white-50 ">
-            <div class="logo">
-              <img src="./assets/img/logo-removebg-preview.png" alt="Travelgo">
-               <div class="companyName">TravelGo</div>
-              </div>
-              <h1 class="text-white p-3">3/4 Days Ladakh package</h1>
-              <p class="ml-3">Starting at just 25000 rupees</p>
-              
-              <div class="card bg-transparent p-3">
-                <i class="fa fa-plane" aria-hidden="true"> Flights</i>
-                <br><i class="fa fa-home" aria-hidden="true"> 5 star Hotals</i>
-                <br><i class="fa fa-bicycle" aria-hidden="true"> Cycle Rides</i>
-                <br><i class="fa fa-camera" aria-hidden="true"> We Capture All your Memories</i>
-                <br><i class="fa fa-music" aria-hidden="true"> Lot of Fun</i>
-                <br><i class="fa fa-ship" aria-hidden="true"> Boting</i>
-                <br><i class="fa fa-trophy" aria-hidden="true"> Many Sports Activitie</i>
-              </div>
-
-              <div class=" locations">
-                <div class="locCard">
-                  <img class="rounded" src="./assets/img/ladakh.jpg" alt="">
-                  <p >Ladakh</p>
-                </div>
-                <div class="locationCard">
-                  <img class="rounded" src="./assets/img/manali.jpg" alt="">
-                  <p >Manali</p>
-                </div> <div class="locationCard">
-                  <img class="rounded" src="./assets/img/nepal.jpg" alt="">
-                  <p >Nepal</p>
-                </div>
-              </div>
-
-              </div>
-             
-
-
-              <a name="" id="" class="text-white signin" href="#" role="button">Sign in/Register</a>
-
-          <div class="col-lg-4 col-md-6 col-sm-8 align-self-center">
-            <div class="card text-left p-2 m-5  bg-transparent border-light text-white">
-             <div class="card-body">
-                <h4 class="card-title">Book you way to Happyness</h4>
-                <p class="card-text">
-                  <form action="">
-                    <input type="text" required pattern="^[A-Za-z]*$" placeholder="Name*" class="form-control  m-2" name="inputName" id="inputName">
-                    <input type="number" required pattern="^[\d]{10}$" placeholder="Phone*" class="form-control m-2 " name="inputName" id="inputName">
-                    <input type="email" required  placeholder="Email*" class="form-control m-2" name="inputName" id="inputName">
-                    <button type="submit" class="btn btn-danger m-2">Book Now</button>
-                  </form>
-                </p>
-              </div>
-            </div>
-           
-            
-            <!-- TODO: This is for server side, there is another version for browser defaults -->
-          </div>
-          
-     
-        </div>
-         </div>
-    <div class="card text-white bg-secondary text-center">
-      <!--<img class="card-img-top " src="./assets/img/bg.jpg" alt="">
-      -->  <div class="card-body">
-        <h4 class="card-title">Dicover Ladakh this Summer</h4>
-        <p class="card-text">SEE WHAT Ladakh HAS TO OFFER</p>
-
-      <div class="row">
-        <div class="col-md-3 col-sm-5 ">
-            <div class=" text-white  daySection">
-              <img class="card-img-top" src="./assets/img/palace.jpg" alt="">
-              <div class="card-body">
-                <h4 class="card-title">Day 1-Arrive Leh (Welcome)</h4>
-                <p class="card-text">you will be taken for a sightseeing tour to the Leh Palace which is a
-                   former royal palace overlooking the Ladakhi Himalayan town of Leh.
-                 </p>
-              </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-5 ">
-          <div class=" text-white  daySection">
-            <img class="card-img-top" src="./assets/img/leh2.jpg" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Day 2-Excursion to Monasteries</h4>
-              <p class="card-text"> Visit the Hemis Gompa which is the largest monastic foundation of Drukpa Kagyu Order
-                 of Tibetan Buddhism.
-                A visit to the Thiksey Monastery will take you to an impressive complex on a hill above the village.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-5 ">
-          <div class=" text-white  daySection">
-            <img class="card-img-top" src="./assets/img/leh3.jpg" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Day 3-Excursion to Khardungla Top</h4>
-              <p class="card-text">head to Khardungla Top which is the highest motorable road in the world with an elevation approx 17,582ft.
-                Reaching the top, you will get to experience the amazing views and peaks of the Zanskar range.
-                </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-5 ">
-          <div class=" text-white  daySection">
-            <img class="card-img-top" src="./assets/img/leh4.jpg" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Day 4</h4>
-              <p class="card-text">Head to Shanti Stupa which is a magnificent white-domed stupa 
-                dedicated to Buddhism and Leh Market which is a Tibetan Market selling lots of small
-                 stalls selling clothes, souvenirs, artificial jewellery and more.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button type="button" name="" id="" class="btn btn-danger btn-lg m-3">Book Now</button>
-      </div>
-      </div>
-
-      <div class="row bg-secondary justify-content-center">
-        <div class="card  text-center">
-          <div id="carouselId" class="carousel slide customersSlide " data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselId" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselId" data-slide-to="1"></li>
-              <li data-target="#carouselId" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner " role="listbox">
-              <div class="carousel-item active happyCustomers">
-                <img src="./assets/img/l1.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item happyCustomers">
-                <img src="./assets/img/l8.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item happyCustomers">
-                <img src="./assets/img/l9.jpg" alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-<h1 class="text-white bg-secondary text-center m-0 pt-3">Plans</h1>
-      <div class="row p-5 bg-secondary justify-content-around">
-
-        <div class="col-md-3 col-sm-5 card m-2">
-            <div class="card-header bg-white text-center">
-              <h4 class="card-title">Standard</h4>
-              <p>25000 &#8377</p>
-            </div>
-            <div class="card-body">
-              <i class="fa fa-plane" aria-hidden="true"> Flights</i>
-              <br><i class="fa fa-home" aria-hidden="true"> 3 star Hotals</i>
-              <br><i class="fa fa-bicycle" aria-hidden="true"> Cycle Rides</i>
-              <br><i class="fa fa-camera" aria-hidden="true"> We Capture All your Memories</i>
-              <br><i class="fa fa-music" aria-hidden="true"> Lot of Fun</i>
-            </div>
-            <div class="card-footer">
-              <button type="button" name="" id="" class="btn btn-danger btn btn-block">Buy</button>
-            </div>
-      </div>
-      <div class="col-md-3 col-sm-5 card m-2">
-        <div class="card-header bg-white text-center">
-          <h4 class="card-title">Luxury</h4>
-            <p>35000 &#8377</p>
-        </div>
-          <div class="card-body">
-            <i class="fa fa-plane" aria-hidden="true"> Flights</i>
-            <br><i class="fa fa-home" aria-hidden="true"> 4 star Hotals</i>
-            <br><i class="fa fa-bicycle" aria-hidden="true"> Cycle Rides</i>
-            <br><i class="fa fa-camera" aria-hidden="true"> We Capture All your Memories</i>
-            <br><i class="fa fa-music" aria-hidden="true"> Lot of Fun</i>
-            <br><i class="fa fa-ship" aria-hidden="true"> Boting</i>
-          </div>
-          <div class="card-footer">
-            <button type="button" name="" id="" class="btn btn-danger btn btn-block">Buy</button>
-          </div>
-      </div>
-      <div class="col-md-3 col-sm-5 card m-2">
-        <div class="card-header bg-white text-center">
-          <h4 class="card-title">Premium</h4>
-            <p>50000 &#8377</p>
-        </div>
-          <div class="card-body ">
-            
-            <i class="fa fa-plane" aria-hidden="true"> Flights</i>
-            <br><i class="fa fa-home" aria-hidden="true"> 5 star Hotals</i>
-            <br><i class="fa fa-bicycle" aria-hidden="true"> Cycle Rides</i>
-            <br><i class="fa fa-camera" aria-hidden="true"> We Capture All your Memories</i>
-            <br><i class="fa fa-music" aria-hidden="true"> Lot of Fun</i>
-            <br><i class="fa fa-ship" aria-hidden="true"> Boting</i>
-            <br><i class="fa fa-trophy" aria-hidden="true"> Many Sports Activitie</i>
-          </div>
-          <div class="card-footer">
-            <button type="button" name="" id="" class="btn btn-danger btn btn-block">Buy</button>
-          </div>
-      </div>
-
-      </div>
-
-      <h1 class="text-white bg-secondary text-center m-0 pt-3">What our Customers think</h1>
-      <div class="row bg-secondary justify-content-center p-2">
-        <div class="card  text-center">
-          <div id="reviews" class="carousel slide customersSlide " data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#reviews" data-slide-to="0" class="active"></li>
-              <li data-target="#reviews" data-slide-to="1"></li>
-              <li data-target="#reviews" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner " role="listbox">
-
-              <div class="carousel-item active happyCustomers">
-                <div class="card bg-dark text-white">
-                  <div class="card-body">
-                    <blockquote class="blockquote">
-                      <p>Excellent Trip really good in service,security and entertainment. Perfect plans.</p>
-                      <footer class="card-blockquote">By:Vijaykanth Reddy</footer>
-                    </blockquote>
-                  </div>
-                  <div class="card-footer pb-5">
-                  <img class="rounded-circle " src="./assets/img/review2.jpg" alt="">
-                    <span class = "fa fa-star checked"></span>  
-                    <span class = "fa fa-star checked"></span>  
-                    <span class = "fa fa-star checked"></span>  
-                    <span class = "fa fa-star checked"></span>
-                    <span class = "fa fa-star-half"></span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item happyCustomers bg-dark text-white card">
-                <div class="card-body ">
-                  <blockquote class="blockquote">
-                    <p>Full Happy I suggust to join TravelGo form amazingly extraordinay Holidays.</p>
-                    <footer class="card-blockquote">By: Srikanth </footer>
-                  </blockquote>
-                </div>
-                <div class="card-footer pb-5">
-                  <img class="rounded-circle " src="./assets/img/review3.jpg" alt="">
-                  <span class = "fa fa-star checked"></span>  
-                  <span class = "fa fa-star checked"></span>  
-                  <span class = "fa fa-star checked"></span>  
-                  <span class = "fa fa-star checked"></span>
-                  <span class = "fa fa-star-half-empty"></span>
-                </div>
-              </div>
-
-              <div class="carousel-item happyCustomers  bg-dark text-white card">
-                <div class="card-body ">
-                  <blockquote class="blockquote  ">
-                    <p>Super quality time hotals travel vehicles all are perfect enjoyed every moment!</p>
-                    <footer class="card-blockquote  ">By:Vijaya Shree Kanwal</footer>
-                  </blockquote>
-                </div>
-                <div class="card-footer pb-5  text-center">
-                  <img class="rounded-circle " src="./assets/img/review1.jpg" alt="">
-                  <span class = "fa fa-star checked"></span>  
-                  <span class = "fa fa-star checked"></span>  
-                  <span class = "fa fa-star checked"></span>  
-                  <span class = "fa fa-star checked"></span>
-                  <span class = "fa fa-star"></span>
-                </div>
-              </div>
-
-              </div>
-              <a class="carousel-control-prev " href="#reviews" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-                <span class="sr-only ">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#reviews" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-
-            </div>
-           
-          </div>
-        </div>
-
-      <div class="row justify-content-center bg-secondary">
-        <div class="card text-center p-3 bg-transparent text-white ">
-          <div class="card-title ">Insta Snaps</div>
-          <div class="card-body">
-            <div class="card-deck">
-              <div class="card">
-                <img class="card-img-top" src="./assets/img/l10.jpg" alt="">
-              </div>
-              <div class="card">
-                <img class="card-img-top" src="./assets/img/l2.jpg" alt="">
-              </div>
-              <div class="card">
-                <img class="card-img-top" src="./assets/img/l4.jpg" alt="">
-                
-              </div>
-            </div><div class="card-deck mt-4">
-              <div class="card">
-                <img class="card-img-top" src="./assets/img/l3.jpg" alt="">
-                
-              </div>
-              <div class="card">
-                <img class="card-img-top" src="./assets/img/l5.jpg" alt="">
-              </div>
-              <div class="card">
-                <img class="card-img-top" src="./assets/img/l6.jpg" alt="">
-                
-              </div>
-            </div>
-          </div>
-          <div class="card-footer"><i class="fa fa-instagram" aria-hidden="true"> Instagram</i></div>
-        </div>
-      </div>
-      
-
-      
-    <footer class="bg-dark container-fluid p-5">
-      <div class="card bg-transparent text-white text-center">
-        <div class="card-title display-4 font-weight-bold">Save 20% by Booking Now</div>
-        <div class="card-body">EXPLORE THE BESUTY OF LADAKH</div>
-        <button type="button" class="btn  btn-danger btn-lg">Book Now (Pay later)</button>
-      </div>
-
-    </footer>
+     <!--Header Section-->
+     <!-- #include file="./components/header.html" -->
+     <div id='header'></div>
+     <!-- Travel Location details day wise detail in cards-->
+     <div id="locations"></div>
+     <!-- Available packages deatils-->
+     <div id="packages"></div>
+     <!--Reviws-->
+     <div id="reviews"></div>
+     <!--Footer-->
+     <div id='footer'></div>
+   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

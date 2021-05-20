@@ -8,18 +8,16 @@
     min-height: 100vh;
 } 
 .signin{
-    position: absolute;
+    position:absolute  !important ;
     right: 10px;
     top: 5px;
-    background-color: rgba(240, 248, 255, 0.425);
+    font-weight: bold;
     border-radius: 12px;
     padding: 5px;
+    background-color: transparent;
     transition-duration: .5s;
 }
-.signin:hover{
-    text-decoration: none;
-    background-color: rgba(57, 79, 202, 0.705);
-}
+
 .logo img{
     width: 5vw;
     margin: 20px;
@@ -59,7 +57,8 @@
     height: 450px;
     background-color:rgb(0,163,163);
     transition-duration: 1s;
-    overflow: scroll;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px black;
 }
 ::-webkit-scrollbar{
     width: 0px;
@@ -85,4 +84,15 @@ height: 50vh;
     height: 70px;
     display: block;
     margin: auto;
+    }
+.package{
+    background-color: rgb(240, 248, 255) !important;
+    box-shadow: 5px 5px 10px black;
+}
+@media only screen and (max-width:600px) {
+    
+    .signin:hover{
+        text-decoration: none;
+        background-color: rgb(6, 21, 104)  ;
+    }
     }
