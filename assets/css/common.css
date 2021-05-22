@@ -69,11 +69,11 @@
 
 }
 .daySection img{
-    height: 180px;
+    height: 230px;
 }
 .happyCustomers img{
-width: 70vw;
-height: 50vh;
+    width: 70vw;
+    height: 50vh;
 }
 .customersSlide{
     display: block;
@@ -89,8 +89,20 @@ height: 50vh;
     background-color: rgb(240, 248, 255) !important;
     box-shadow: 5px 5px 10px black;
 }
+
+
+.nav-link:hover{
+    background-color: rgba(112, 116, 119, 0.445);
+}
+.bookNow{
+    width: 150px;
+}
+.arrowCarousel{
+    padding: 20px !important;
+    border-radius: 100%;
+    background-color: black !important;
+}
 @media only screen and (max-width:600px) {
-    
     .signin:hover{
         text-decoration: none;
         background-color: rgb(6, 21, 104)  ;
