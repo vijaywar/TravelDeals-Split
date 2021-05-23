@@ -23,7 +23,7 @@
     margin: 20px;
 }
 .logo .companyName{
-    display: inline-block;
+    display: inline-flex;
     vertical-align: middle;
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
@@ -34,15 +34,16 @@
     display: inline-block;
     vertical-align: middle;
 }
+
 .locations .locCard img{
     height: 150px;
     width: 150px;
-    display: inline-block;
+    display: inline-flex;
 }
 .locations .locationCard img{
     height: 110px;
     width: 110px;
-    display: inline-block;
+    display: inline-flex;
     filter: opacity(.4);
     transition-duration: .5s;
 }
