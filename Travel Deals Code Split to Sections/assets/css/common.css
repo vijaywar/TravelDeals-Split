@@ -103,9 +103,6 @@
     border-radius: 100%;
     background-color: black !important;
 }
-.wrapper{
-    overflow-x: hidden;
-}
 @media only screen and (max-width:600px) {
     .signin:hover{
         text-decoration: none;
